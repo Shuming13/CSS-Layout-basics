@@ -79,6 +79,7 @@ a {
 	padding-bottom: 1.5em;
 	background: #3acec2;
 	margin-bottom: 30px;
+/*  overflow: hidden;*/
 }
 
 .main-footer {
@@ -103,6 +104,19 @@ a {
 		margin: 0 auto;
 	}
 
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    float: left;
+    margin-left: 12px;
+  }
+
+  .name {
+    float: left;
+  }
+
 	.feat-img {
 		width: 300px;
     float: left;
@@ -110,4 +124,10 @@ a {
     padding: 10px;
     border: solid 1px #d9e4ea;
 	}
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
