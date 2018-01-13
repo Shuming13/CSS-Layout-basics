@@ -50,21 +50,22 @@ a {
 	margin-bottom: 6px;
 }
 
+.name a,
 .main-nav a {
-	font-size: .95em;
-	color: #3acec2;
-	text-transform: uppercase;
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
 }
 
-.main-nav a:hover {
-	color: #093a58;
-}
-
-.name-nnav a, 
-.main-nav a {
-  padding: 10px 15px;
-  display: block;
-}
+	.main-nav a {
+		font-size: .95em;
+		color: #3acec2;
+		text-transform: uppercase;
+	}
+	
+	.main-nav a:hover {
+		color: #093a58;
+	}
 
 /* ---- Layout Containers ---- */
 
@@ -90,28 +91,23 @@ a {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 789px) {
 
 	.wrap {
 		min-height: calc(100vh - 89px);
 	}
 
 	.container {
-		width: 80%;
+		width: 85%;
 		max-width: 1150px;
 		margin: 0 auto;
 	}
 
-  .name,
-  .main-nav,
-  .main-nav li {
-    display: inline-block;
-  }
-
-  .name {
-    width: 240px;
-    margin-right: 50px;
-    
-  }
-
+	.feat-img {
+		width: 300px;
+    float: left;
+    margin: 5px 25px 25px 0;
+    padding: 10px;
+    border: solid 1px #d9e4ea;
+	}
 }
